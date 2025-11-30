@@ -15,7 +15,7 @@ class RequestSpecs:
     @staticmethod
     def unauth_spec():
         return {
-            "base_url": f"{Config.get('server')}{Config.get('api_version')}",
+            "base_url": f"{Config.get('server')}{Config.get('api_version')}", # nbank-tests
             "headers": RequestSpecs.default_req_headers()
         }
 
